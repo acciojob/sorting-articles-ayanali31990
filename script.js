@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const bands = [
   'The Plot in You',
   'The Devil Wears Prada',
@@ -27,9 +26,9 @@ const sortedBands = bands.sort((a, b) => {
   return 0;
 });
 
-// Create a UL to hold the list
+// Create a UL with the correct ID
 const ul = document.createElement('ul');
-ul.id = 'band';
+ul.id = 'bands'; // ✅ matches test case expectation
 
 // Add each sorted band to the list
 sortedBands.forEach(band => {
